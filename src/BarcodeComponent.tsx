@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Barcode from 'react-native-barcode-builder';
 
 export interface Props {
   name: string;
@@ -17,6 +18,8 @@ export default class BarcodeComponent extends React.Component<Props> {
         <Text style={styles.greeting}>
           My BarcodeComponent
         </Text>
+        <Barcode value="Hello World" format="CODE128" />
+
       </View>
     );
   }

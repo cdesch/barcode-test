@@ -6,7 +6,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <BarcodeComponent name="this name" />
+      
+      <BarcodeComponent 
+        value="12341231231"
+        format="CODE128"
+        flat
+        text="12341231231"/>
     </View>
   );
 }
